@@ -12,5 +12,8 @@
 	},
 	"observability": {
     "enabled": true
-  }
+  },
+    "routes": [
+    { "pattern": "cv.fatihfwz.my.id", "custom_domain": true }
+  ]
 }

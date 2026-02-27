@@ -11,13 +11,13 @@ export default function Footer() {
         </div>
         
         <div className="flex gap-6">
-          <a href={`mailto:${personalInfo.email}`} className="hover:text-white transition-colors">
+          <a target='_blank' href={`mailto:${personalInfo.email}`} className="hover:text-white transition-colors">
             <Mail size={20} />
           </a>
-          <a href={personalInfo.linkedin} className="hover:text-white transition-colors">
+          <a target='_blank' href={personalInfo.linkedin} className="hover:text-white transition-colors">
             <Linkedin size={20} />
           </a>
-          <a href="#" className="hover:text-white transition-colors">
+          <a target='_blank' href={personalInfo.github} className="hover:text-white transition-colors">
             <Github size={20} />
           </a>
         </div>

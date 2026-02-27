@@ -1,4 +1,4 @@
-import { MapPin, Mail, Phone, Linkedin, ExternalLink } from 'lucide-react';
+import { MapPin, Mail, Phone, Linkedin, ExternalLink, Github } from 'lucide-react';
 import { personalInfo } from '../data';
 
 export default function Hero() {
@@ -18,7 +18,7 @@ export default function Hero() {
             data-aos="fade-up"
             className="mb-6"
           > 
-            <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-4 bg-clip-text text-transparent bg-linear-to-r from-white to-zinc-400">
+            <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-4 bg-clip-text text-transparent bg-linear-to-r from-white to-zinc-500">
               {personalInfo.name}
             </h1>
             <h2 className="text-2xl md:text-3xl text-zinc-400 font-light mb-8">
@@ -39,10 +39,6 @@ export default function Hero() {
               <Mail size={18} />
               <span>{personalInfo.email}</span>
             </a>
-            <div className="flex items-center gap-2 hover:text-white transition-colors">
-              <Phone size={18} />
-              <span>{personalInfo.phone}</span>
-            </div>
           </div>
 
           <div 
@@ -50,13 +46,13 @@ export default function Hero() {
             data-aos-delay="300"
             className="flex gap-4"
           >
-            <a href={personalInfo.linkedin} className="px-6 py-3 bg-white text-black rounded-full font-medium hover:bg-zinc-200 transition-colors flex items-center gap-2">
+            <a href={personalInfo.linkedin} target='_blank' className="px-6 py-3 bg-white text-black rounded-full font-medium hover:bg-zinc-200 transition-colors flex items-center gap-2">
               <Linkedin size={20} />
               LinkedIn
             </a>
-            <a href={personalInfo.portfolio} className="px-6 py-3 bg-zinc-800 text-white rounded-full font-medium hover:bg-zinc-700 transition-colors border border-zinc-700 flex items-center gap-2">
-              <ExternalLink size={20} />
-              Portfolio
+            <a href={personalInfo.github} target='_blank' className="px-6 py-3 bg-zinc-800 text-white rounded-full font-medium hover:bg-zinc-700 transition-colors border border-zinc-700 flex items-center gap-2">
+              <Github size={20} />
+              GitHub
             </a>
           </div>
         </div>

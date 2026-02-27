@@ -2,10 +2,9 @@ export const personalInfo = {
   name: 'Muhammad Fatih Al Fawwaz',
   role: 'AI Engineering Student & Web Developer',
   location: 'Surabaya, Indonesia',
-  phone: '0813-3335-0504',
   email: 'fatihfwz87@gmail.com',
-  linkedin: '#', 
-  portfolio: '#', 
+  linkedin: 'https://www.linkedin.com/in/fatihfawwaz/', 
+  github: 'https://github.com/fth87',
   summary:
     'First-year Artificial Intelligence Engineering student with a growing focus on machine learning, supported by hands-on experience in web development through organizational projects, events, and national-level competitions. Currently strengthening foundational knowledge in machine learning while continuing to build and maintain production-ready web applications. Seeking opportunities to learn and contribute as a Web Developer or AI/ML.',
 };

@@ -1,9 +1,19 @@
+export interface Project {
+  id: string;
+  title: string;
+  shortDescription: string;
+  longDescription: string;
+  role?: string;
+  techStack: string[];
+  links: string[];
+  images: string[];
+}
 export const personalInfo = {
   name: 'Muhammad Fatih Al Fawwaz',
   role: 'AI Engineering Student & Web Developer',
   location: 'Surabaya, Indonesia',
   email: 'fatihfwz87@gmail.com',
-  linkedin: 'https://www.linkedin.com/in/fatihfawwaz/', 
+  linkedin: 'https://www.linkedin.com/in/fatihfawwaz/',
   github: 'https://github.com/fth87',
   summary:
     'First-year Artificial Intelligence Engineering student with a growing focus on machine learning, supported by hands-on experience in web development through organizational projects, events, and national-level competitions. Currently strengthening foundational knowledge in machine learning while continuing to build and maintain production-ready web applications. Seeking opportunities to learn and contribute as a Web Developer or AI/ML.',
@@ -131,5 +141,176 @@ export const achievements = [
     title: 'Scholarship Awardee',
     organization: 'PT Bayan Fully Funded Scholarship',
     year: 'Awardee',
+  },
+];
+
+export const projects: Project[] = [
+  {
+    id: 'selli',
+    title: 'Selli',
+    shortDescription: 'AI-driven CRM for banking sales optimization using predictive lead scoring.',
+    longDescription:
+      'An AI-powered CRM platform designed to replace cold-calling strategies with predictive conversion modeling. Built using Python and Scikit-learn served via FastAPI, with dual portals powered by React and NestJS. The system includes automated lead prioritization, real-time analytics, and scalable infrastructure supported by MySQL and Redis.',
+    role: 'Machine Learning Engineer',
+    techStack: ['Python', 'Scikit-learn', 'FastAPI', 'React', 'NestJS', 'MySQL', 'Redis'],
+    links: ['https://sales-selli.fajrifarid.com/', 'https://admin-selli.fajrifarid.com/'],
+    images: ['/project/seli.png'],
+  },
+  {
+    id: 'cloudx-its',
+    title: 'CloudX ITS (CloudX-Lab)',
+    shortDescription: 'Cloud-native GPU resource management framework for AI clusters.',
+    longDescription:
+      'A distributed GPU orchestration framework that consolidates heterogeneous hardware into scalable AI clusters. The platform supports self-service provisioning, lease control, identity provider integration, Ray cluster management, and JupyterLab environments for research-scale AI workloads.',
+    role: 'Web Developer',
+    techStack: ['Nextjs', 'Typescript', 'TailwindCSS', 'GoLang', 'PostgreSQL', 'Ray', 'JupyterLab'],
+    links: [],
+    images: ['/project/cloudx.png'],
+  },
+  {
+    id: 'ma-amanatul-ummah',
+    title: 'MA Unggulan Amanatul Ummah',
+    shortDescription: 'Official educational institution portal.',
+    longDescription: 'Contributed to the development and maintenance of the official school website using Laravel and MySQL, ensuring structured backend architecture and secure information management.',
+    techStack: ['Laravel', 'MySQL'],
+    links: ['https://mai-au.sch.id'],
+    images: ['/project/MA Amanatul Ummah.png'],
+  },
+  {
+    id: 'ini-lho-its-2025',
+    title: 'Ini Lho ITS 2025',
+    shortDescription: 'Official campus event portal.',
+    longDescription: 'Developed a modular and scalable frontend using Next.js and TypeScript, styled with TailwindCSS, and integrated with a Go-based backend. Focused on performance, maintainability, and clean component architecture.',
+    role: 'Frontend Developer',
+    techStack: ['Next.js', 'TypeScript', 'TailwindCSS'],
+    links: [],
+    images: ['/project/IniLhoITS2025.png'],
+  },
+  {
+    id: 'ini-lho-its-2026',
+    title: 'Ini Lho ITS 2026',
+    shortDescription: 'Lead frontend engineering for a high-traffic campus platform.',
+    longDescription:
+      'Led frontend architecture and engineering standards for the 2026 iteration. Established scalable system design, optimized Core Web Vitals, and implemented accessible, modular UI components using Next.js and TypeScript.',
+    role: 'Lead Frontend Engineer',
+    techStack: ['Next.js', 'TypeScript'],
+    links: [],
+    images: ['/project/IniLhoITS2026.png.png'],
+  },
+  {
+    id: 'petrolida-2025',
+    title: 'Petrolida 2025',
+    shortDescription: 'Official international conference website.',
+    longDescription: 'Developed an SEO-optimized digital platform using Next.js and TypeScript with TailwindCSS. Focused on performance optimization, accessibility, and responsive design.',
+    role: 'Web Developer',
+    techStack: ['Next.js', 'TypeScript', 'TailwindCSS'],
+    links: [],
+    images: ['/project/petrolida2025.png'],
+  },
+  {
+    id: 'galaxy',
+    title: 'GALAXY Competition Platform',
+    shortDescription: 'End-to-end competition management system.',
+    longDescription: 'Built a Laravel-based platform to manage participant registration, competition workflows, and results processing. Designed a responsive interface using Bootstrap and integrated a structured MySQL backend.',
+    role: 'Fullstack Developer',
+    techStack: ['Laravel', 'Bootstrap', 'MySQL'],
+    links: ['https://galaxy.mai-au.sch.id'],
+    images: ['/project/galaxy events.png'],
+  },
+  {
+    id: 'kasir-konter',
+    title: 'Kasir Konter',
+    shortDescription: 'Cloud-based retail digitalization system.',
+    longDescription:
+      'A digital transformation solution migrating manual bookkeeping into a cloud-based architecture using Next.js (App Router) and Supabase. Implemented Row Level Security and QR-based service tracking for operational transparency.',
+    role: 'Fullstack Developer',
+    techStack: ['Next.js', 'Supabase'],
+    links: [],
+    images: ['/project/kasir konter.png'],
+  },
+  {
+    id: 'qdayak',
+    title: 'QDayak',
+    shortDescription: 'Cultural heritage educational website.',
+    longDescription: 'An educational platform showcasing Dayak cultural heritage. Developed using HTML, Bootstrap, and AOS animations to create an engaging digital exhibition experience.',
+    techStack: ['HTML', 'Bootstrap', 'AOS'],
+    links: ['https://fth87.github.io/qdayak2.0/'],
+    images: ['/project/qdayak.png'],
+  },
+  {
+    id: 'mieme',
+    title: 'MieMe',
+    shortDescription: 'Digital promotion platform for a local MSME.',
+    longDescription: 'A responsive promotional website built with HTML, Bootstrap, and AOS to support local culinary businesses in expanding their digital presence.',
+    techStack: ['HTML', 'Bootstrap', 'AOS'],
+    links: ['https://mieme.vercel.app'],
+    images: ['/project/mieme.png'],
+  },
+  {
+    id: 'sandangans',
+    title: 'Sandangans',
+    shortDescription: 'Sustainable fashion e-commerce platform.',
+    longDescription: 'An e-commerce platform built with Next.js, TailwindCSS, Framer Motion, and AOS to deliver an immersive and interactive shopping experience focused on sustainable fashion.',
+    techStack: ['Next.js', 'TailwindCSS', 'Framer Motion'],
+    links: ['https://sandangans.vercel.app/'],
+    images: ['/project/sandhangans.png'],
+  },
+  {
+    id: 'sinau',
+    title: 'Sinau',
+    shortDescription: 'Interactive online learning ecosystem.',
+    longDescription: 'A learning management platform built with Laravel backend and React frontend, connected via Inertia.js to provide a seamless SPA experience with interactive quizzes and learning modules.',
+    techStack: ['Laravel', 'React', 'Inertia.js', 'TailwindCSS'],
+    links: [],
+    images: ['/project/sinau.png'],
+  },
+  {
+    id: 'health-tracker',
+    title: 'Health Tracker',
+    shortDescription: 'Web-based wellness monitoring dashboard.',
+    longDescription: 'A responsive health tracking dashboard built with Next.js and TailwindCSS, featuring interactive data visualization for monitoring personal wellness metrics.',
+    techStack: ['Next.js', 'TailwindCSS'],
+    links: ['https://health-tracker-web-zeta.vercel.app/'],
+    images: ['/project/health tracker.png'],
+  },
+  {
+    id: 'animelist',
+    title: 'AnimeList',
+    shortDescription: 'Anime discovery and watchlist tracking platform.',
+    longDescription: 'A React-based application for discovering and tracking anime series, featuring search capabilities, metadata exploration, and a personalized watchlist system.',
+    techStack: ['React', 'TailwindCSS'],
+    links: ['https://animelist-iota.vercel.app/'],
+    images: ['/project/anime list.png'],
+  },
+  {
+    id: 'savior',
+    title: 'Savior',
+    shortDescription: 'Real-time IoT wearable command center.',
+    longDescription: 'A real-time dashboard built with Next.js and Socket.io to communicate with wearable safety devices. Integrated Leaflet for live geospatial tracking and emergency response monitoring.',
+    techStack: ['Next.js', 'Socket.io', 'Leaflet'],
+    links: ['https://saviorwearable.vercel.app/'],
+    images: ['/project/savior.png'],
+  },
+  {
+    id: 'coffee-beans',
+    title: 'Coffee Beans Classification',
+    shortDescription: 'Comparative study of traditional ML and SOTA deep learning for fine-grained classification.',
+    longDescription:
+      'A fine-grained classification study covering 54 coffee bean varieties. Compared traditional models (KNN, SVM, Ensemble Bagging SVM with LBP and HSV features) against modern architectures such as ConvNeXt-Tiny and Swin Transformer. Hyperparameter tuning was conducted using Optuna, achieving up to 87.25% accuracy.',
+    role: 'Researcher / ML Engineer',
+    techStack: ['KNN', 'SVM', 'ConvNeXt', 'Swin Transformer', 'Optuna'],
+    links: ['https://coffe-beans-classification.vercel.app'],
+    images: ['/project/coffe beans classification.png'],
+  },
+  {
+    id: 'hybrid-pit-stop',
+    title: 'Hybrid Pit Stop Strategy Advisor',
+    shortDescription: 'Hybrid AI-based decision support system for Formula 1 pit stop strategy.',
+    longDescription:
+      'A capstone project combining Fuzzy Logic, Probabilistic Reasoning, and First-Order Logic to generate optimal and regulation-compliant pit stop recommendations. The system integrates uncertainty handling and rule-based reasoning into a unified strategic decision engine.',
+    role: 'Research Project',
+    techStack: ['Fuzzy Logic', 'Probabilistic Reasoning', 'First-Order Logic'],
+    links: ['https://hybrid-pit-stop-strategy-advisor.vercel.app'],
+    images: ['/project/hybrid pitstop advisor.png'],
   },
 ];

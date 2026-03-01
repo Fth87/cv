@@ -9,22 +9,20 @@ export default function Footer() {
           <h2 className="text-white font-bold text-lg">{personalInfo.name}</h2>
           <p className="text-sm mt-1">Built with Astro, React, and Tailwind</p>
         </div>
-        
+
         <div className="flex gap-6">
-          <a target='_blank' href={`mailto:${personalInfo.email}`} className="hover:text-white transition-colors">
+          <a target="_blank" href={`mailto:${personalInfo.email}`} className="hover:text-white transition-colors" aria-label="Email Me">
             <Mail size={20} />
           </a>
-          <a target='_blank' href={personalInfo.linkedin} className="hover:text-white transition-colors">
+          <a target="_blank" href={personalInfo.linkedin} className="hover:text-white transition-colors" aria-label="LinkedIn Profile">
             <Linkedin size={20} />
           </a>
-          <a target='_blank' href={personalInfo.github} className="hover:text-white transition-colors">
+          <a target="_blank" href={personalInfo.github} className="hover:text-white transition-colors" aria-label="GitHub Profile">
             <Github size={20} />
           </a>
         </div>
-        
-        <div className="text-sm font-mono">
-          © {new Date().getFullYear()} All rights reserved.
-        </div>
+
+        <div className="text-sm font-mono">© {new Date().getFullYear()} All rights reserved.</div>
       </div>
     </footer>
   );

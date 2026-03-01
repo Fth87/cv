@@ -25,18 +25,23 @@ export default function Hero() {
                 <MapPin size={18} />
                 <span>{personalInfo.location}</span>
               </div>
-              <a href={`mailto:${personalInfo.email}`} className="flex items-center gap-2 hover:text-white transition-colors">
+              <a href={`mailto:${personalInfo.email}`} aria-label="Send Email" className="flex items-center gap-2 hover:text-white transition-colors">
                 <Mail size={18} />
                 <span>{personalInfo.email}</span>
               </a>
             </div>
 
             <div data-aos="fade-up" data-aos-delay="300" className="flex justify-center md:justify-start gap-4">
-              <a href={personalInfo.linkedin} target="_blank" className="px-6 py-3 bg-white text-black rounded-full font-medium hover:bg-zinc-200 transition-colors flex items-center gap-2">
+              <a href={personalInfo.linkedin} aria-label="Visit LinkedIn Profile" target="_blank" className="px-6 py-3 bg-white text-black rounded-full font-medium hover:bg-zinc-200 transition-colors flex items-center gap-2">
                 <Linkedin size={20} />
                 LinkedIn
               </a>
-              <a href={personalInfo.github} target="_blank" className="px-6 py-3 bg-zinc-800 text-white rounded-full font-medium hover:bg-zinc-700 transition-colors border border-zinc-700 flex items-center gap-2">
+              <a
+                href={personalInfo.github}
+                aria-label="Visit GitHub Profile"
+                target="_blank"
+                className="px-6 py-3 bg-zinc-800 text-white rounded-full font-medium hover:bg-zinc-700 transition-colors border border-zinc-700 flex items-center gap-2"
+              >
                 <Github size={20} />
                 GitHub
               </a>

@@ -6,6 +6,8 @@ import Experience from './Experience';
 import Skills from './Skills';
 import Projects from './Projects';
 import EducationAwards from './EducationAwards';
+import DreamCareer from './DreamCareer';
+import FinalProject from './FinalProject';
 import Footer from './Footer';
 
 export default function App() {
@@ -25,6 +27,8 @@ export default function App() {
       <Skills />
       <Projects />
       <EducationAwards />
+      <DreamCareer />
+      <FinalProject />
       <Footer />
     </main>
   );

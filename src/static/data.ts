@@ -137,11 +137,11 @@ export const achievements = [
     organization: 'AMIKOM × GRAB Intermedia IT',
     year: '2023',
   },
-  {
-    title: 'Scholarship Awardee',
-    organization: 'PT Bayan Fully Funded Scholarship',
-    year: 'Awardee',
-  },
+  // {
+  //   title: 'Scholarship Awardee',
+  //   organization: 'PT Bayan Fully Funded Scholarship',
+  //   year: 'Awardee',
+  // },
 ];
 
 export const projects: Project[] = [
@@ -314,3 +314,25 @@ export const projects: Project[] = [
     images: ['/project/hybrid pitstop advisor.png'],
   },
 ];
+
+export const dreamCareer = {
+  headline: 'Dream Career',
+  visions: [
+    {
+      title: 'Creative Workshop',
+      icon: 'workshop',
+      description: 'A personal workshop where I can turn imagination into reality crafting furniture, building prototypes, and creating things with my own hands.',
+    },
+    {
+      title: 'Farm & Plantation',
+      icon: 'farm',
+      description: 'A vast stretch of land for farming and livestock, orchards, vegetable gardens, and open pastures for a self-sustaining life close to nature.',
+    },
+  ],
+};
+
+export const finalProject = {
+  headline: 'Final Project Plan',
+  title: 'AI-Powered Financial Management',
+  description: 'A web-based financial management system integrated with an AI Agent via WhatsApp and Telegram to track expenses, set budgets, and get financial insights through chat.',
+};

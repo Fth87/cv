@@ -29,6 +29,11 @@ export default function Hero() {
                 <Mail size={18} />
                 <span>{personalInfo.email}</span>
               </a>
+  
+              <a href={personalInfo.website} aria-label="Visit portfolio" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-white transition-colors">
+                <ExternalLink size={18} />
+                <span>{personalInfo.website}</span>
+              </a>
             </div>
 
             <div data-aos="fade-up" data-aos-delay="300" className="flex justify-center md:justify-start gap-4">

@@ -27,8 +27,8 @@ export default function App() {
       <Skills />
       <Projects />
       <EducationAwards />
-      <DreamCareer />
-      <FinalProject />
+      {/* <DreamCareer /> */}
+      {/* <FinalProject /> */}
       <Footer />
     </main>
   );

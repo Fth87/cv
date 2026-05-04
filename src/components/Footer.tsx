@@ -22,7 +22,7 @@ export default function Footer() {
           </a>
         </div>
 
-        <div className="text-sm font-mono">© {new Date().getFullYear()} All rights reserved.</div>
+        <div className="text-sm">© {new Date().getFullYear()} All rights reserved.</div>
       </div>
     </footer>
   );

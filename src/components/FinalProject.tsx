@@ -6,7 +6,7 @@ export default function FinalProject() {
     <section className="py-20 bg-zinc-50 border-b border-zinc-200">
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto">
-          <h3 data-aos="fade-right" className="text-sm font-mono text-zinc-500 uppercase tracking-wider mb-12">
+          <h3 data-aos="fade-right" className="text-sm text-zinc-500 uppercase tracking-wider mb-12">
             07. {finalProject.headline}
           </h3>
 

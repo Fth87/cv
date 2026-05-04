@@ -6,7 +6,7 @@ export default function DreamCareer() {
     <section className="py-20 bg-white">
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto">
-          <h3 data-aos="fade-right" className="text-sm font-mono text-zinc-500 uppercase tracking-wider mb-12">
+          <h3 data-aos="fade-right" className="text-sm text-zinc-500 uppercase tracking-wider mb-12">
             06. {dreamCareer.headline}
           </h3>
 

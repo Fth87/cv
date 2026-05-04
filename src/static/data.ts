@@ -10,7 +10,7 @@ export interface Project {
 }
 export const personalInfo = {
   name: 'Muhammad Fatih Al Fawwaz',
-  role: 'AI Engineering Student & Web Developer',
+  role: 'AI Engineering Student & Tech Enthusiast',
   location: 'Surabaya, Indonesia',
   email: 'fatihfwz87@gmail.com',
   linkedin: 'https://www.linkedin.com/in/fatihfawwaz/',
@@ -30,9 +30,9 @@ export const education = [
 ];
 
 export const skills = {
-  programming: ['Python', 'Typescript', 'Git', 'GitHub', 'Docker', 'MySQL', 'Linux', 'PostgreSQL', 'Figma'],
-  machineLearning: ['Basic AI/ML concepts', 'Scikit-learn', 'Pandas', 'NumPy', 'PyTorch'],
-  webDev: ['Next.js', 'Tailwind CSS', 'Supabase', 'FastAPI', 'Laravel', 'Bootstrap', 'React', 'TanStack', 'Astro'],
+  programming: ['Python', 'Typescript', 'Git', 'GitHub', 'Docker', 'MySQL', 'Linux', 'Arch Linux', 'PostgreSQL', 'Figma'],
+  machineLearning: ['AI/ML concepts', 'Scikit-learn', 'Pandas', 'NumPy', 'PyTorch', 'TensorFlow', 'Keras'],
+  webDev: ['Next.js', 'Tailwind CSS', 'Supabase', 'FastAPI', 'Laravel', 'Bootstrap', 'React', 'TanStack', 'Astro', 'Express'],
 };
 
 export const experience = [
@@ -48,7 +48,7 @@ export const experience = [
     ],
   },
   {
-    company: 'Institut Teknologi Sepuluh Nopember (ITS)',
+    company: 'Teaching Assistant',
     role: 'Teaching Assistant - Graph Theory',
     location: 'Surabaya',
     period: 'Feb 2026 – Present',

@@ -12,12 +12,15 @@ const getIconClass = (skill: string) => {
     Docker: 'devicon-docker-plain',
     MySQL: 'devicon-mysql-plain',
     Linux: 'devicon-linux-plain',
+    'Arch Linux': 'devicon-archlinux-plain',
     PostgreSQL: 'devicon-postgresql-plain',
     Figma: 'devicon-figma-plain',
     'Scikit-learn': 'devicon-scikitlearn-plain',
     Pandas: 'devicon-pandas-plain',
     NumPy: 'devicon-numpy-plain',
     PyTorch: 'devicon-pytorch-plain',
+    TensorFlow: 'devicon-tensorflow-original',
+    Keras: 'devicon-keras-original',
     'Next.js': 'devicon-nextjs-plain',
     'Tailwind CSS': 'devicon-tailwindcss-plain',
     Supabase: 'devicon-supabase-plain',
@@ -25,9 +28,10 @@ const getIconClass = (skill: string) => {
     Laravel: 'devicon-laravel-plain',
     Bootstrap: 'devicon-bootstrap-plain',
     React: 'devicon-react-plain',
+    Express: 'devicon-express-original',
     TanStack: 'custom-tanstack', // Use custom Layers icon
     Astro: 'devicon-astro-plain',
-    'Basic AI/ML concepts': 'devicon-jupyter-plain', // Fallback/Generic
+    'AI/ML concepts': 'devicon-jupyter-plain', // Fallback/Generic
   };
   return map[skill] || 'devicon-devicon-plain';
 };
@@ -37,7 +41,7 @@ export default function Skills() {
     <section className="py-20 bg-zinc-950 text-white">
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
-          <h3 data-aos="fade-right" className="text-sm font-mono text-zinc-500 uppercase tracking-wider mb-12">
+          <h3 data-aos="fade-right" className="text-sm text-zinc-500 uppercase tracking-wider mb-12">
             03. Technical Arsenal
           </h3>
 
@@ -52,7 +56,7 @@ export default function Skills() {
                 {skills.programming.map((skill, i) => (
                   <div key={i} className="flex flex-col items-center gap-2 group">
                     <i className={`${getIconClass(skill)} text-3xl text-zinc-400 group-hover:text-white transition-colors`}></i>
-                    <span className="text-xs text-zinc-500 font-mono text-center group-hover:text-zinc-300 transition-colors">{skill}</span>
+                    <span className="text-xs text-zinc-500 text-center group-hover:text-zinc-300 transition-colors">{skill}</span>
                   </div>
                 ))}
               </div>
@@ -63,12 +67,12 @@ export default function Skills() {
               <div className="w-12 h-12 bg-zinc-800 rounded-xl flex items-center justify-center mb-6 text-zinc-400">
                 <Cpu size={24} />
               </div>
-              <h4 className="text-xl font-bold mb-6">Machine Learning</h4>
+              <h4 className="text-xl font-bold mb-6">AI</h4>
               <div className="grid grid-cols-3 gap-4">
                 {skills.machineLearning.map((skill, i) => (
                   <div key={i} className="flex flex-col items-center gap-2 group">
                     <i className={`${getIconClass(skill)} text-3xl text-zinc-400 group-hover:text-white transition-colors`}></i>
-                    <span className="text-xs text-zinc-500 font-mono text-center group-hover:text-zinc-300 transition-colors">{skill}</span>
+                    <span className="text-xs text-zinc-500 text-center group-hover:text-zinc-300 transition-colors">{skill}</span>
                   </div>
                 ))}
               </div>
@@ -92,7 +96,7 @@ export default function Skills() {
                       ) : (
                         <i className={`${iconClass} text-3xl text-zinc-400 group-hover:text-white transition-colors`}></i>
                       )}
-                      <span className="text-xs text-zinc-500 font-mono text-center group-hover:text-zinc-300 transition-colors">{skill}</span>
+                      <span className="text-xs text-zinc-500 text-center group-hover:text-zinc-300 transition-colors">{skill}</span>
                     </div>
                   );
                 })}

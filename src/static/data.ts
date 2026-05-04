@@ -189,7 +189,7 @@ export const projects: Project[] = [
     role: 'Web Developer',
     techStack: ['Next.js', 'TypeScript', 'AI Proctoring'],
     links: ['https://quzuu.id'],
-    images: [],
+    images: ['/project/quzuu.png'],
   },
   {
     id: 'selli',

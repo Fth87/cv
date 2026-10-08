@@ -17,7 +17,7 @@ export const personalInfo = {
   github: 'https://github.com/fth87',
   website: 'https://cv.fatihfwz.my.id/',
   summary:
-    'First-year Artificial Intelligence Engineering student with a growing focus on machine learning, supported by hands-on experience in web development through organizational projects, events, and national-level competitions. Currently strengthening foundational knowledge in machine learning while continuing to build and maintain production-ready web applications. Seeking opportunities to learn and contribute as a Web Developer or AI/ML.',
+    'Third-year Artificial Intelligence Engineering student at ITS, with a growing focus on machine learning and hands-on web development experience from organizational projects, events, and national-level competitions. Building on coursework in programming, mathematics, and machine learning while developing web applications. Interested in Web Developer and AI/ML opportunities.',
 };
 
 export const education = [
@@ -25,7 +25,7 @@ export const education = [
     school: 'Institut Teknologi Sepuluh Nopember (ITS)',
     degree: 'Bachelor of Artificial Intelligence Engineering',
     period: 'Jul 2024 – Present',
-    details: ['Accepted into the SNBP program', 'Currently studying programming, mathematics, and machine learning'],
+    details: ['Accepted into the SNBP program', 'Currently in third year, studying programming, mathematics, and machine learning'],
   },
 ];
 
